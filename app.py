@@ -2,7 +2,7 @@ import random
 
 def generate_valid_card():
     """Valid card generated using Luhn algorithm.
-    The code is only valid for python 2.7. Success rate is ~95%"""
+    The code is only valid for python < 3.0. Success rate is ~95%"""
 
     card_number = map(int, "47" +
                       ''.join([str(random.randint(1, 9)) for x in range(14)]))
