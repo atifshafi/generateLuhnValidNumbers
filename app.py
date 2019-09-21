@@ -5,7 +5,7 @@ def generate_valid_card():
     The code is only valid for python < 3.0. Success rate is ~95%"""
 
     card_number = map(int, "47" +
-                      ''.join([str(random.randint(1, 9)) for x in range(14)]))
+                      ''.join([str(random.randint(1, 9)) for _ in range(14)]))
 
     tmp_card = list(card_number)
 
